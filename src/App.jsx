@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import NavBar from "./components/NavBar";
 import MovieSection from "./components/MovieSection";
 import SeriesSection from "./components/SeriesSection";
@@ -23,7 +24,7 @@ export default function App() {
         <Route path="/EditMovie/:movieId" element={<><EditMovie /><FooterSection /></>} />
         <Route path="/AddMovie" element={<><AddMovie /><FooterSection /></>} />
         <Route path="/ViewSeries/:getId" element={<><ViewSeries /><FooterSection /></>} />
-        <Route path="/EditSeries/:seriesId" element={<><EditSeries /><FooterSection /></>} />
+        <Route path="/EditSeries/:id" element={<><EditSeries /><FooterSection /></>} />
         
       </Routes>
     </BrowserRouter>
