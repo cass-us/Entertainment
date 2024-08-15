@@ -1,0 +1,455 @@
+{
+  "movies": {
+    "latest": {
+      "titles": [
+        {
+          "title": "Avenger: Endgame",
+          "image": "avengerEndGame",
+          "src": "/assets/movies/avenger_endGame.jpeg"
+        },
+        {
+          "title": "Dearth of Dick",
+          "image": "dearthOfDick",
+          "src": "/assets/movies/dearth_of_dick.png"
+        },
+        {
+          "title": "Hidden Life",
+          "image": "hiddenLife",
+          "src": "/assets/movies/hiddenLife.png"
+        },
+        {
+          "title": "John Wick: Chapter 5",
+          "image": "johnWick",
+          "src": "/assets/movies/john_wick_chapter_5.png"
+        },
+        {
+          "title": "Nightmare Angel",
+          "image": "nightMareAngel",
+          "src": "/assets/movies/nightMare_angel.png"
+        },
+        {
+          "title": "Us",
+          "image": "us",
+          "src": "/assets/movies/us.png"
+        },
+        {
+          "title": "Wonder Woman",
+          "image": "wonderWoman",
+          "src": "/assets/movies/wonder_woman.png"
+        },
+        {
+          "title": "Joker",
+          "image": "joker",
+          "src": "/assets/movies/joker.png"
+        }
+      ]
+    },
+    "all": {
+      "titles": [
+        {
+          "id": "1",
+          "title": "Avenger: Endgame",
+          "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos’ actions and restore order to the universe once and for all.",
+          "image": "avengerEndGame",
+          "src": "/assets/movies/avenger_endGame.jpeg",
+          "country": "USA",
+          "genre": "Action, Adventure, Sci-Fi",
+          "year": 2019,
+          "type": "Movie"
+        },
+        {
+          "id": "2",
+          "title": "Dearth of Dick",
+          "description": "A gripping drama that explores the consequences of power and betrayal.",
+          "image": "dearthOfDick",
+          "src": "/assets/movies/dearth_of_dick.png",
+          "country": "UK",
+          "genre": "Drama",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "3",
+          "title": "Hidden Life",
+          "description": "A historical drama based on the true story of an Austrian farmer's moral resistance to the Nazi regime.",
+          "image": "hiddenLife",
+          "src": "/assets/movies/hiddenLife.png",
+          "country": "Austria",
+          "genre": "Drama, History",
+          "year": 2019,
+          "type": "Movie"
+        },
+        {
+          "id": "4",
+          "title": "John Wick: Chapter 5",
+          "description": "The continuing saga of John Wick as he seeks revenge against those who wronged him.",
+          "image": "johnWick",
+          "src": "/assets/movies/john_wick_chapter_5.png",
+          "country": "USA",
+          "genre": "Action, Thriller",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "5",
+          "title": "Nightmare Angel",
+          "description": "A supernatural thriller about a haunted artifact that brings chaos to those who possess it.",
+          "image": "nightMareAngel",
+          "src": "/assets/movies/nightMare_angel.png",
+          "country": "USA",
+          "genre": "Horror, Thriller",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "6",
+          "title": "Us",
+          "description": "A family’s serene beach vacation turns to chaos when their doppelgängers appear and begin to terrorize them.",
+          "image": "us",
+          "src": "/assets/movies/us.png",
+          "country": "USA",
+          "genre": "Horror, Thriller",
+          "year": 2019,
+          "type": "Movie"
+        },
+        {
+          "id": "7",
+          "title": "Wonder Woman",
+          "description": "An Amazonian princess leaves her sheltered life to explore the world and stop a massive conflict.",
+          "image": "wonderWoman",
+          "src": "/assets/movies/wonder_woman.png",
+          "country": "USA",
+          "genre": "Action, Adventure, Fantasy",
+          "year": 2017,
+          "type": "Movie"
+        },
+        {
+          "id": "8",
+          "title": "Joker",
+          "description": "A psychological thriller that explores the origins of the iconic villain, Joker, as he descends into madness.",
+          "image": "joker",
+          "src": "/assets/movies/joker.png",
+          "country": "USA",
+          "genre": "Crime, Drama, Thriller",
+          "year": 2019,
+          "type": "Movie"
+        },
+        {
+          "id": "9",
+          "title": "Dead Pool & Wolverine",
+          "description": "An action-packed crossover with Deadpool teaming up with Wolverine for an epic adventure.",
+          "image": "joker",
+          "src": "/assets/movies/deadPool.jpeg",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "10",
+          "title": "Dead Pool & Wolverine",
+          "description": "Continued chaos as Deadpool and Wolverine face new threats in their unique way.",
+          "image": "joker",
+          "src": "/assets/movies/p_deadpool_wolverine.jpeg",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "11",
+          "title": "Dead Pool & Wolverine",
+          "description": "A thrilling sequel that pushes the boundaries of action and comedy with Deadpool and Wolverine.",
+          "image": "joker",
+          "src": "/assets/movies/superman.jpg",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "12",
+          "title": "Dead Pool & Wolverine",
+          "description": "Deadpool and Wolverine continue their unlikely partnership in this high-octane sequel.",
+          "image": "joker",
+          "src": "/assets/movies/hulk.jpg",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "13",
+          "title": "Dead Pool & Wolverine",
+          "description": "An epic new chapter in the Deadpool and Wolverine saga filled with action and humor.",
+          "image": "joker",
+          "src": "/assets/movies/qns.png",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "14",
+          "title": "Dead Pool & Wolverine",
+          "description": "The dynamic duo returns for another thrilling adventure with unexpected twists.",
+          "image": "joker",
+          "src": "/assets/movies/onceUp.png",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "15",
+          "title": "Dead Pool & Wolverine",
+          "description": "The latest installment in the Deadpool and Wolverine series, packed with action and laughs.",
+          "image": "joker",
+          "src": "/assets/movies/one_child_nation.png",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        },
+        {
+          "id": "16",
+          "title": "Dead Pool & Wolverine",
+          "description": "A new thrilling adventure with Deadpool and Wolverine, filled with unexpected action.",
+          "image": "joker",
+          "src": "/assets/movies/uncut.png",
+          "country": "USA",
+          "genre": "Action, Comedy",
+          "year": 2024,
+          "type": "Movie"
+        }
+      ]
+    }
+  },
+  "series": {
+    "latest": {
+      "titles": [
+        {
+          "title": "Altered Carbon",
+          "image": "alteredCarbon",
+          "src": "/assets/series/latest/altered_co2.jpeg"
+        },
+        {
+          "title": "Dark",
+          "image": "dark",
+          "src": "/assets/series/latest/dark.jpeg"
+        },
+        {
+          "title": "Fallout",
+          "image": "fallout",
+          "src": "/assets/series/latest/fallout.png"
+        },
+        {
+          "title": "The Last of Us",
+          "image": "lastOfUs",
+          "src": "/assets/series/latest/lastOfUs.jpeg"
+        },
+        {
+          "title": "Only Murders in the Building",
+          "image": "onlyMurders",
+          "src": "/assets/series/latest/only_murder.png"
+        },
+        {
+          "title": "Rick and Morty",
+          "image": "rickAndMorty",
+          "src": "/assets/series/latest/ricknmorty.png"
+        },
+        {
+          "title": "Loki",
+          "image": "loki",
+          "src": "/assets/series/latest/loki.jpeg"
+        },
+        {
+          "title": "Wednesday",
+          "image": "wednesday",
+          "src": "/assets/series/latest/wednesday.jpeg"
+        }
+      ]
+    },
+    "all": {
+      "titles": [
+        {
+          "id": "1",
+          "title": "Altered Carbon",
+          "description": "A futuristic sci-fi series set in a world where consciousness can be transferred to different bodies.",
+          "image": "alteredCarbon",
+          "src": "/assets/series/latest/altered_co2.jpeg",
+          "country": "USA",
+          "genre": "Sci-Fi, Drama",
+          "year": 2018,
+          "type": "Series"
+        },
+        {
+          "id": "2",
+          "title": "Dark",
+          "description": "A German thriller series that explores time travel and its impact on human nature.",
+          "image": "dark",
+          "src": "/assets/series/latest/dark.jpeg",
+          "country": "Germany",
+          "genre": "Sci-Fi, Drama, Thriller",
+          "year": 2017,
+          "type": "Series"
+        },
+        {
+          "id": "3",
+          "title": "Fallout",
+          "description": "A series based on the popular video game franchise set in a post-apocalyptic world.",
+          "image": "fallout",
+          "src": "/assets/series/latest/fallout.png",
+          "country": "USA",
+          "genre": "Sci-Fi, Drama, Action",
+          "year": 2024,
+          "type": "Series"
+        },
+        {
+          "id": "4",
+          "title": "The Last of Us",
+          "description": "A post-apocalyptic drama following the journey of a smuggler and a young girl across a devastated America.",
+          "image": "lastOfUs",
+          "src": "/assets/series/latest/lastOfUs.jpeg",
+          "country": "USA",
+          "genre": "Drama, Horror",
+          "year": 2023,
+          "type": "Series"
+        },
+        {
+          "id": "5",
+          "title": "Only Murders in the Building",
+          "description": "A comedy series about three strangers who are obsessed with true crime and find themselves in the middle of a real-life murder mystery.",
+          "image": "onlyMurders",
+          "src": "/assets/series/latest/only_murder.png",
+          "country": "USA",
+          "genre": "Comedy, Crime, Drama",
+          "year": 2021,
+          "type": "Series"
+        },
+        {
+          "id": "6",
+          "title": "Rick and Morty",
+          "description": "An animated series following the misadventures of a cynical mad scientist and his good-hearted but fretful grandson.",
+          "image": "rickAndMorty",
+          "src": "/assets/series/latest/ricknmorty.png",
+          "country": "USA",
+          "genre": "Animation, Adventure, Comedy",
+          "year": 2013,
+          "type": "Series"
+        },
+        {
+          "id": "7",
+          "title": "Loki",
+          "description": "A Marvel series focusing on Loki, the God of Mischief, and his adventures through time.",
+          "image": "loki",
+          "src": "/assets/series/latest/loki.jpeg",
+          "country": "USA",
+          "genre": "Action, Adventure, Fantasy",
+          "year": 2021,
+          "type": "Series"
+        },
+        {
+          "id": "8",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/latest/wednesday.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        },
+        {
+          "id": "9",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/you.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+        ,{
+          "id": "10",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/doc.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+        ,{
+          "id": "11",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/flash.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+        ,{
+          "id": "12",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/year-of-the-witching-cover.jpg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+        ,{
+          "id": "13",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/hearts.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+        ,{
+          "id": "14",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/homecoming.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+        ,{
+          "id": "15",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/mad.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+        ,{
+          "id": "16",
+          "title": "Wednesday",
+          "description": "A dark comedy series centered on Wednesday Addams as she navigates life at a peculiar academy.",
+          "image": "wednesday",
+          "src": "/assets/series/1899.jpeg",
+          "country": "USA",
+          "genre": "Comedy, Drama, Fantasy",
+          "year": 2022,
+          "type": "Series"
+        }
+
+      ]
+    }
+  }
+}
