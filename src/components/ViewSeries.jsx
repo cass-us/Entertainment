@@ -1,12 +1,12 @@
 import { useParams, useNavigate } from "react-router-dom";
-import movieStore from "./movies_store.json";// Adjust this if your file is named differently
+import movieStore from "./movies_store.json";
 
-const getSeriesById = (id) => {
-  return  movieStore?.series?.all?.titles?.find((series) => series.id === id) || null;
+const getSeriesById = (getId) => {
+  return  movieStore?.series?.all?.titles?.find((series) => series.id === getId) || null;
 };
 
-const deleteSeriesById = (id) => {
-  const seriesIndex = movieStore.series.all.titles.findIndex((series) => series.id === id);
+const deleteSeriesById = (getId) => {
+  const seriesIndex = movieStore.series.all.titles.findIndex((series) => series.id === getId);
   if (seriesIndex !== -1) {
     movieStore.series.all.titles.splice(seriesIndex, 1);
     return true;
@@ -14,11 +14,13 @@ const deleteSeriesById = (id) => {
   return false;
 };
 
+
+
 function ViewSeries() {
   const navigate = useNavigate();
-  const { getId } = useParams(); // Directly get 'id' from useParams
+  const { getId } = useParams(); 
   const series = getSeriesById(getId);
-
+ 
   const handleImageClick = (id) => {
     navigate(`/EditSeries/${id}`);
   };
