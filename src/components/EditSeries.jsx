@@ -2,22 +2,25 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import movieStore from "./movies_store.json";
 
-// Utility function to simulate updating the movieStore
-const updateMovieStore = (id, updatedMovie) => {
-  const movieIndex = movieStore.movies.all.titles.findIndex((movie) => movie.id === id);
-  if (movieIndex !== -1) {
-    movieStore.movies.all.titles[movieIndex] = updatedMovie;
+
+const updateSeries = (getId, updatedSeries) => {
+  const seriesIndex = movieStore.series.all.titles.findIndex((series) => series.id === getId);
+  
+  if (seriesIndex !== -1) {
+    movieStore.series.all.titles[seriesIndex] = updatedSeries;
   }
 };
 
-const getMovieById = (id) => {
-  return movieStore?.movies?.all?.titles?.find((movie) => movie.id === id) || null;
+const getSeriesId = (getId) => {
+  return movieStore?.series?.all?.titles?.find((series) => series.id === getId) || "nothing found";
 };
 
 const EditSeries = () => {
-  const { movieId } = useParams();
+  const { id } = useParams();
+  console.log(`Value of get id is: ${id}`);
+
   const navigate = useNavigate();
-  const [movie, setMovie] = useState(null);
+  const [series, setSeries] = useState(null);
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -28,20 +31,22 @@ const EditSeries = () => {
   });
 
   useEffect(() => {
-    const movieData = getMovieById(movieId);
-    if (movieData) {
-      setMovie(movieData);
+
+    const seriesData = getSeriesId(id);
+    if (seriesData) {
+      setSeries(seriesData);
       setFormData({
-        title: movieData.title,
-        description: movieData.description,
-        country: movieData.country,
-        genre: movieData.genre,
-        year: movieData.year,
-        type: movieData.type,
+        title: seriesData.title,
+        description: seriesData.description,
+        country: seriesData.country,
+        genre: seriesData.genre,
+        year: seriesData.year,
+        type: seriesData.type,
       });
     }
-  }, [movieId]);
+  }, [id]);
 
+ 
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -51,19 +56,22 @@ const EditSeries = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const updatedMovie = { ...movie, ...formData };
-    updateMovieStore(movieId, updatedMovie); // Simulate updating the movieStore
-    console.log("Updated Movie Data:", formData);
-    navigate(`/ViewMovie/${movieId}`);
+    const updatedSeries = { ...series, ...formData };
+    updateSeries(id, updatedSeries); 
+    console.log("Updated Series Data:", formData);
+    navigate(`/ViewSeries/${id}`);
   };
+  
+  if (!series) {
+    return <div>Series not found is 
+      <p>{getSeriesId({id})}</p></div>;
 
-  if (!movie) {
-    return <div>Movie not found</div>;
+
   }
 
   return (
     <div className="max-w-2xl mx-auto p-4">
-      <h1 className="font-bold text-2xl mb-4">Edit Movie: {movie.title}</h1>
+      <h1 className="font-bold text-2xl mb-4">Edit Series: {series.title}</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-gray-700">Title</label>
@@ -134,7 +142,7 @@ const EditSeries = () => {
           <button
             type="button"
             className="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-700"
-            onClick={() => navigate(`/ViewMovie/${movieId}`)}
+            onClick={() => navigate(`/ViewSeries/${id}`)}
           >
             Cancel
           </button>
