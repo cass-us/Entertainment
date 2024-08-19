@@ -1,5 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from "./components/NavBar";
 import MovieSection from "./components/MovieSection";
 import SeriesSection from "./components/SeriesSection";
@@ -14,7 +13,7 @@ import ViewSeries from "./components/ViewSeries";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <NavBar />
       <Routes>
         <Route path="/" element={<><MovieSection /><SeriesSection /><FooterSection /></>} />
@@ -25,8 +24,7 @@ export default function App() {
         <Route path="/AddMovie" element={<><AddMovie /><FooterSection /></>} />
         <Route path="/ViewSeries/:getId" element={<><ViewSeries /><FooterSection /></>} />
         <Route path="/EditSeries/:id" element={<><EditSeries /><FooterSection /></>} />
-        
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
